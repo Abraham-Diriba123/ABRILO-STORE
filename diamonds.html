@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Diamonds</title><link href="style.css" rel="stylesheet"/><script defer="" src="script.js"></script>
+<style>
+/* General mobile fixes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav, .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a, .navbar a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  background: #333;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, .btn, input[type=submit] {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .quick-picks, .products, .container {
+    padding: 10px;
+  }
+
+  nav, .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head><body><div class="container"><header><div class="logo-row"><img alt="logo" src="assets/banner-1.png"/><div class="brand">ABRILO STORE</div></div><nav><a href="index.html">Home</a><a href="uc.html">UC</a><a href="diamonds.html">Diamonds</a><a href="premium.html">Premium</a><a href="contact.html">Contact</a><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></nav></header><main><section class="section"><h2>Diamonds &amp; Packages</h2><div class="grid">
+<!-- Diamonds -->
+<div class="card"><h4>110 Diamonds 💎</h4><p class="price">190 BIRR</p><button class="btn" onclick="addToCart('110 Diamonds',190)">Add to Cart</button></div>
+<div class="card"><h4>220 Diamonds 💎</h4><p class="price">380 BIRR</p><button class="btn" onclick="addToCart('220 Diamonds',380)">Add to Cart</button></div>
+<div class="card"><h4>330 Diamonds 💎</h4><p class="price">570 BIRR</p><button class="btn" onclick="addToCart('330 Diamonds',570)">Add to Cart</button></div>
+<div class="card"><h4>440 Diamonds 💎</h4><p class="price">760 BIRR</p><button class="btn" onclick="addToCart('440 Diamonds',760)">Add to Cart</button></div>
+<div class="card"><h4>550 Diamonds 💎</h4><p class="price">950 BIRR</p><button class="btn" onclick="addToCart('550 Diamonds',950)">Add to Cart</button></div>
+<div class="card"><h4>660 Diamonds 💎</h4><p class="price">1140 BIRR</p><button class="btn" onclick="addToCart('660 Diamonds',1140)">Add to Cart</button></div>
+<div class="card"><h4>770 Diamonds 💎</h4><p class="price">1330 BIRR</p><button class="btn" onclick="addToCart('770 Diamonds',1330)">Add to Cart</button></div>
+<div class="card"><h4>814 Diamonds 💎</h4><p class="price">1450 BIRR</p><button class="btn" onclick="addToCart('814 Diamonds',1450)">Add to Cart</button></div>
+<div class="card"><h4>990 Diamonds 💎</h4><p class="price">1710 BIRR</p><button class="btn" onclick="addToCart('990 Diamonds',1710)">Add to Cart</button></div>
+<div class="card"><h4>1000 Diamonds 💎</h4><p class="price">1750 BIRR</p><button class="btn" onclick="addToCart('1000 Diamonds',1750)">Add to Cart</button></div>
+<div class="card"><h4>2000 Diamonds 💎</h4><p class="price">3300 BIRR</p><button class="btn" onclick="addToCart('2000 Diamonds',3300)">Add to Cart</button></div>
+<div class="card"><h4>3000 Diamonds 💎</h4><p class="price">5000 BIRR</p><button class="btn" onclick="addToCart('3000 Diamonds',5000)">Add to Cart</button></div>
+<div class="card"><h4>4000 Diamonds 💎</h4><p class="price">6800 BIRR</p><button class="btn" onclick="addToCart('4000 Diamonds',6800)">Add to Cart</button></div>
+<div class="card"><h4>5000 Diamonds 💎</h4><p class="price">9000 BIRR</p><button class="btn" onclick="addToCart('5000 Diamonds',9000)">Add to Cart</button></div>
+<div class="card"><h4>6000 Diamonds 💎</h4><p class="price">10000 BIRR</p><button class="btn" onclick="addToCart('6000 Diamonds',10000)">Add to Cart</button></div>
+
+<!-- Memberships -->
+<div class="card"><h4>Weekly Membership 🌟</h4><p class="price">430 BIRR</p><button class="btn" onclick="addToCart('Weekly Membership',430)">Add to Cart</button></div>
+<div class="card"><h4>Monthly Membership 🌟</h4><p class="price">1950 BIRR</p><button class="btn" onclick="addToCart('Monthly Membership',1950)">Add to Cart</button></div>
+<div class="card"><h4>Super Membership 🌟</h4><p class="price">2200 BIRR</p><button class="btn" onclick="addToCart('Super Membership',2200)">Add to Cart</button></div>
+<div class="card"><h4>Booyah Pass 🌟</h4><p class="price">600 BIRR</p><button class="btn" onclick="addToCart('Booyah Pass',600)">Add to Cart</button></div>
+
+<!-- Level Up Packages -->
+<div class="card"><h4>Level 6 (120 Diamonds 💎)</h4><p class="price">80 BIRR</p><button class="btn" onclick="addToCart('Level 6 (120 Diamonds)',80)">Add to Cart</button></div>
+<div class="card"><h4>Level 10 (200 Diamonds 💎)</h4><p class="price">130 BIRR</p><button class="btn" onclick="addToCart('Level 10 (200 Diamonds)',130)">Add to Cart</button></div>
+<div class="card"><h4>Level 15 (200 Diamonds 💎)</h4><p class="price">140 BIRR</p><button class="btn" onclick="addToCart('Level 15 (200 Diamonds)',140)">Add to Cart</button></div>
+<div class="card"><h4>Level 20 (200 Diamonds 💎)</h4><p class="price">150 BIRR</p><button class="btn" onclick="addToCart('Level 20 (200 Diamonds)',150)">Add to Cart</button></div>
+<div class="card"><h4>Level 25 (200 Diamonds 💎)</h4><p class="price">180 BIRR</p><button class="btn" onclick="addToCart('Level 25 (200 Diamonds)',180)">Add to Cart</button></div>
+<div class="card"><h4>Level 30 (320 Diamonds 💎)</h4><p class="price">200 BIRR</p><button class="btn" onclick="addToCart('Level 30 (320 Diamonds)',200)">Add to Cart</button></div>
+</div></section></main></div></body></html>

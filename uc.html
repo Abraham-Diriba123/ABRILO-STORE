@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>UC Packages</title><link href="style.css" rel="stylesheet"/><script defer="" src="script.js"></script>
+<style>
+/* General mobile fixes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav, .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a, .navbar a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  background: #333;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, .btn, input[type=submit] {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .quick-picks, .products, .container {
+    padding: 10px;
+  }
+
+  nav, .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+</head><body></head><body><div class="container"><header><div class="logo-row"><img alt="logo" src="assets/banner-1.png"/><div class="brand">ABRILO STORE</div></div><nav><a href="index.html">Home</a><a href="uc.html">UC</a><a href="diamonds.html">Diamonds</a><a href="premium.html">Premium</a><a href="contact.html">Contact</a><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></nav></header><main><section class="section"><h2>UC Packages</h2><div class="grid"><div class="grid">
+<div class="card"><h4>10 UC</h4><p class="price">70 BIRR</p><button class="btn" onclick="addToCart('10 UC',70)">Add to Cart</button></div>
+<div class="card"><h4>20 UC</h4><p class="price">125 BIRR</p><button class="btn" onclick="addToCart('20 UC',125)">Add to Cart</button></div>
+<div class="card"><h4>30 UC</h4><p class="price">140 BIRR</p><button class="btn" onclick="addToCart('30 UC',140)">Add to Cart</button></div>
+<div class="card"><h4>60 UC</h4><p class="price">180 BIRR</p><button class="btn" onclick="addToCart('60 UC',180)">Add to Cart</button></div>
+<div class="card"><h4>90 UC</h4><p class="price">350 BIRR</p><button class="btn" onclick="addToCart('90 UC',350)">Add to Cart</button></div>
+<div class="card"><h4>120 UC</h4><p class="price">370 BIRR</p><button class="btn" onclick="addToCart('120 UC',370)">Add to Cart</button></div>
+<div class="card"><h4>180 UC</h4><p class="price">550 BIRR</p><button class="btn" onclick="addToCart('180 UC',550)">Add to Cart</button></div>
+<div class="card"><h4>200 UC</h4><p class="price">600 BIRR</p><button class="btn" onclick="addToCart('200 UC',600)">Add to Cart</button></div>
+<div class="card"><h4>240 UC</h4><p class="price">700 BIRR</p><button class="btn" onclick="addToCart('240 UC',700)">Add to Cart</button></div>
+<div class="card"><h4>325 UC</h4><p class="price">880 BIRR</p><button class="btn" onclick="addToCart('325 UC',880)">Add to Cart</button></div>
+<div class="card"><h4>355 UC</h4><p class="price">980 BIRR</p><button class="btn" onclick="addToCart('355 UC',980)">Add to Cart</button></div>
+<div class="card"><h4>360 UC</h4><p class="price">1040 BIRR</p><button class="btn" onclick="addToCart('360 UC',1040)">Add to Cart</button></div>
+<div class="card"><h4>385 UC</h4><p class="price">1050 BIRR</p><button class="btn" onclick="addToCart('385 UC',1050)">Add to Cart</button></div>
+<div class="card"><h4>415 UC</h4><p class="price">1150 BIRR</p><button class="btn" onclick="addToCart('415 UC',1150)">Add to Cart</button></div>
+<div class="card"><h4>445 UC</h4><p class="price">1300 BIRR</p><button class="btn" onclick="addToCart('445 UC',1300)">Add to Cart</button></div>
+<div class="card"><h4>475 UC</h4><p class="price">1350 BIRR</p><button class="btn" onclick="addToCart('475 UC',1350)">Add to Cart</button></div>
+<div class="card"><h4>505 UC</h4><p class="price">1400 BIRR</p><button class="btn" onclick="addToCart('505 UC',1400)">Add to Cart</button></div>
+<div class="card"><h4>660 UC</h4><p class="price">1700 BIRR</p><button class="btn" onclick="addToCart('660 UC',1700)">Add to Cart</button></div>
+<div class="card"><h4>720 UC</h4><p class="price">1750 BIRR</p><button class="btn" onclick="addToCart('720 UC',1750)">Add to Cart</button></div>
+<div class="card"><h4>780 UC</h4><p class="price">2050 BIRR</p><button class="btn" onclick="addToCart('780 UC',2050)">Add to Cart</button></div>
+<div class="card"><h4>810 UC</h4><p class="price">2100 BIRR</p><button class="btn" onclick="addToCart('810 UC',2100)">Add to Cart</button></div>
+<div class="card"><h4>1020 UC</h4><p class="price">2600 BIRR</p><button class="btn" onclick="addToCart('1020 UC',2600)">Add to Cart</button></div>
+<div class="card"><h4>1105 UC</h4><p class="price">2750 BIRR</p><button class="btn" onclick="addToCart('1105 UC',2750)">Add to Cart</button></div>
+<div class="card"><h4>1440 UC</h4><p class="price">3550 BIRR</p><button class="btn" onclick="addToCart('1440 UC',3550)">Add to Cart</button></div>
+<div class="card"><h4>1800 UC</h4><p class="price">4100 BIRR</p><button class="btn" onclick="addToCart('1800 UC',4100)">Add to Cart</button></div>
+<div class="card"><h4>2125 UC</h4><p class="price">4800 BIRR</p><button class="btn" onclick="addToCart('2125 UC',4800)">Add to Cart</button></div>
+<div class="card"><h4>3850 UC</h4><p class="price">8000 BIRR</p><button class="btn" onclick="addToCart('3850 UC',8000)">Add to Cart</button></div>
+<div class="card"><h4>4000 UC</h4><p class="price">8700 BIRR</p><button class="btn" onclick="addToCart('4000 UC',8700)">Add to Cart</button></div>
+<div class="card"><h4>8100 UC</h4><p class="price">16500 BIRR</p><button class="btn" onclick="addToCart('8100 UC',16500)">Add to Cart</button></div>
+<div class="card"><h4>16200 UC</h4><p class="price">34000 BIRR</p><button class="btn" onclick="addToCart('16200 UC',34000)">Add to Cart</button></div>
